@@ -1,0 +1,12 @@
+{% extends "Super.html" %}
+
+{% block content %}
+    <h2>Content Management : Update Not Installed</h2>
+    <table class="table table-border table-striped">
+        {% for row in notinstalled %}
+        <tr>
+            <td>{{row}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

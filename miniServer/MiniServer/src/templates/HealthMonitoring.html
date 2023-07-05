@@ -1,0 +1,109 @@
+{% extends "Super.html" %}
+
+{% block content %}
+    <h2>Health Monitoring</h2>
+    <table class="table table-border table-striped">
+        <tr>
+            <td>Host Name</td>
+            <td>{{deviceInfo.hostname}}</td>
+        </tr>
+        <tr>
+            <td>IP Address</td>
+            <td>{{deviceInfo.ipAddress}}</td>
+        </tr>
+        <tr>
+            <td>No of Cores</td>
+            <td>{{deviceInfo.cores}}</td>
+        </tr>
+        <tr>
+            <td>No of Logical Processes</td>
+            <td>{{deviceInfo.logicalProcessors}}</td>
+        </tr>
+        <tr>
+            <td>Boot Time</td>
+            <td>{{deviceInfo.bootTime}}</td>
+        </tr>
+        <tr>
+            <td colspan="2"><b>Virtual Memory</b></td>
+        </tr>
+        <tr>
+            <td>Percent</td>
+            <td>{{deviceInfo.virtualMemoryInfo.percent}} %</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>{{deviceInfo.virtualMemoryInfo.total}} Bytes</td>
+        </tr>
+        <tr>
+            <td>Used</td>
+            <td>{{deviceInfo.virtualMemoryInfo.used}} Bytes</td>
+        </tr>
+        <tr>
+            <td>Free</td>
+            <td>{{deviceInfo.virtualMemoryInfo.free}} Bytes</td>
+        </tr>
+        <tr>
+            <td colspan="2"><b>Swap Memory</b></td>
+        </tr>
+        <tr>
+            <td>Percent</td>
+            <td>{{deviceInfo.swapMemoryInfo.percent}} %</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>{{deviceInfo.swapMemoryInfo.total}} Bytes</td>
+        </tr>
+        <tr>
+            <td>Used</td>
+            <td>{{deviceInfo.swapMemoryInfo.used}} Bytes</td>
+        </tr>
+        <tr>
+            <td>Free</td>
+            <td>{{deviceInfo.swapMemoryInfo.free}} Bytes</td>
+        </tr>
+        <tr>
+            <td colspan="2"><b>CPU Information</b></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <table style="width:100%">
+                <tr>
+                    <td>User</td>
+                    <td>System</td>
+                    <td>Idle</td>
+                    <td>Interrupt</td>
+                </tr>
+                {% for row in deviceInfo.cpuTimesInfoList %}
+                    <tr>
+                        <td>{{row.user}}</td>
+                        <td>{{row.system}}</td>
+                        <td>{{row.idle}}</td>
+                        <td>{{row.interrupt}}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><b>CPU Usage %</b></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <table style="width:100%">
+                <tr>
+                    <td>CPU No</td>
+                    <td>CPU Usage %</td>
+                    
+                </tr>
+                {% for row in deviceInfo.cpuUsagePercList %}
+                    <tr>
+                        <td>CPU : {{loop.index}}</td>
+                        <td>{{row}}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+            </td>
+        </tr> 
+        
+    <table>
+{% endblock %}

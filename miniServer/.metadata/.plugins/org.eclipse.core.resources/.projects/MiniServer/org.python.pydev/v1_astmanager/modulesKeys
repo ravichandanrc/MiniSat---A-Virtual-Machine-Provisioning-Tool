@@ -1,0 +1,16 @@
+MODULES_MANAGER_V2
+CPUTimesInfo|D:\miniServer\MiniServer\src\CPUTimesInfo.py
+DeviceInfo|D:\miniServer\MiniServer\src\DeviceInfo.py
+DiskIOCountersInfo|D:\miniServer\MiniServer\src\DiskIOCountersInfo.py
+DiskPartitionsInfo|D:\miniServer\MiniServer\src\DiskPartitionsInfo.py
+MemoryFullInfo|D:\miniServer\MiniServer\src\MemoryFullInfo.py
+MemoryInfo|D:\miniServer\MiniServer\src\MemoryInfo.py
+NetAddressInfo|D:\miniServer\MiniServer\src\NetAddressInfo.py
+NetIOCountersInfo|D:\miniServer\MiniServer\src\NetIOCountersInfo.py
+NetStatsInfo|D:\miniServer\MiniServer\src\NetStatsInfo.py
+ProcessCPUTimesInfo|D:\miniServer\MiniServer\src\ProcessCPUTimesInfo.py
+ProcessInfo|D:\miniServer\MiniServer\src\ProcessInfo.py
+SwapMemoryInfo|D:\miniServer\MiniServer\src\SwapMemoryInfo.py
+UsersInfo|D:\miniServer\MiniServer\src\UsersInfo.py
+VirtualMemoryInfo|D:\miniServer\MiniServer\src\VirtualMemoryInfo.py
+server|D:\miniServer\MiniServer\src\server.py

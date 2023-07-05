@@ -1,0 +1,9 @@
+uid=admin,ou=system
+
+secret
+
+pip3 install python_ldap-3.1.0-cp37-cp37m-win_amd64.whl
+
+ldap3 available
+
+https://technology.amis.nl/2014/10/22/getting-started-with-apacheds-ldap-server-and-directory-studio/

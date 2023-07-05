@@ -1,0 +1,31 @@
+{% extends "Super.html" %}
+
+{% block content %}
+    <h2>Terminate Client Process</h2>
+    <table style="width:100%" class="table table-border table-striped">
+                <tr>
+                    <td>pid</td>
+                    <td>ppid</td>
+                    <td>status</td>
+                    <td>name</td>
+                    <td>User Name</td>
+                    <td>Created Time</td>
+                    <td>CPU Percent</td>
+                    <td>Memory Percent</td>
+                    <td>Action</td>
+                </tr>
+                {% for row in processInfoList %}
+                    <tr>
+                        <td>{{row.pid}}</td>
+                        <td>{{row.ppid}}</td>
+                        <td>{{row.status}}</td>
+                        <td>{{row.name}}</td>
+                        <td>{{row.username}}</td>
+                        <td>{{row.createTime}}</td>
+                        <td>{{row.cpuPercent}}</td>
+                        <td>{{row.memoryPercent}}</td>
+                        <td><a href="/TerminateClientProcess?pid={{row.pid}}" class="btn btn-outline-info btn-sm ">Terminate</a></td>
+                    </tr>
+                {% endfor %}
+            </table>
+{% endblock %}

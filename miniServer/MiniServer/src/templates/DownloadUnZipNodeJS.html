@@ -1,0 +1,13 @@
+{% extends "Super.html" %}
+
+{% block content %}
+    <h2>Result of Node.JS Download</h2>
+
+        {% if result == False %}
+            <div class="alert alert-danger m-3">Download NOT Successfull</div>
+        {% endif %}
+        {% if result == True %}
+            <div class="alert alert-primary m-3">Successfully Downloaded</div>
+        {% endif %}
+
+{% endblock %}
