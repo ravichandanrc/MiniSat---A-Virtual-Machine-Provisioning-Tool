@@ -2,7 +2,7 @@
 
 A Virtual Machine provisioning tool using MiniSat, a centralized open-source tool to manage an organization’s assets by provisioning, maintaining, and updating the hosts on the cloud throughout the complete lifecycle. 
 
-Tools: Eclipse IDE, Node JS, LDAP protocol for authentication, Docker containers, Flask framework
+Tools: Eclipse IDE, Node JS, LDAP protocol for authentication, Docker containers, Python Web Framework (Flask)
 
 ### About: 
 
